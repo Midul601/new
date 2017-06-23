@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title> Javascript-dates </title>
+<script type="text/javascript">
+ var dateofbirth=new Date("january 13,1980 11:20:00");
+ document.write(formatDate(dateofbirth));
+ function formatDate(date)
+  {
+  var year=date.getFullYear();
+  var month=date.getMonth();
+  month=month+1;
+  if (month<10){
+     month="0"+month;
+  }
+  var	 day=date.getDate();
+  if (day<10){
+    day="0"+day;
+  }
+  return day+"/"+month+"/"+year;	
+ 
+  }
+ 
+</script>
+
+</head>
+<body>
+</body>
+</html>
